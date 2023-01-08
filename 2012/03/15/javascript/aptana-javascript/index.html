@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>JavaScript Radians Converter</title>
+        <script src="./jquery-1.7.1.js" type="text/javascript" ></script>
+        <script src="./app.business.js" type="text/javascript" ></script>
+        <script src="./app.gui.js" type="text/javascript" ></script>
+        <script src="./app.business.tests.js" type="text/javascript" ></script>
+    </head>
+    <body>
+        <h1 style="text-align: center" >JavaScript Radians Converter</h1>
+        
+        <div style="width:70%;margin: auto;font-size: 12pt;">
+		    <table style="width:100%">
+		    	<tr>
+		    		<td style="width:40%;vertical-align: top;">
+		    				<table id="usersSaves" style="width:100%;border-style: solid; text-align: center;">
+		    				</table>
+		    		</td>
+		    		<td style="width:70%; font-size: 16pt; vertical-align: top;">
+		    				<input id="usersValue" type="text" style="width:100%; font-size: 18pt;"   /><br />
+		    				
+		    				<span style="margin-right: 20%;margin-left: 15%;">
+		    					<input id="radiansConversion" type="radio"  value="2" name="conversion" checked="checked" /> Radians
+		    					</span>
+		    				<span>
+		    					<input id="degreesConversion" type="radio" value="1" name="conversion" /> Degrees
+		    					</span>
+		    				<br />
+		    				<div id="resultsDisplay" style="width:100%; padding-top: 15%;padding-bottom: 15%;text-align: center">
+		    					Results
+		    				</div>
+		    				<div style="width:100%; text-align: left;">
+		    					<input id="addToStore" type="button" value="+" />
+		    				</div>
+		    		</td>
+		    	</tr>
+		    </table>
+        </div>
+        <div id="traceLog" style="width:100%">
+        </div>
+
+        <div style="width:100%;">
+        	<input type="button" id="btnTest" value="Test" name="Test" onclick="UnitTests()" />
+        </div>
+        <div id="unitTestResults" style="width:100%">
+        </div>
+    </body>
+</html>
